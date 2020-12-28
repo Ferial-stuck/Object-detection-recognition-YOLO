@@ -13,8 +13,8 @@ with open(classesFile,'rt') as f :
     classes =f.read().rstrip('\n').split('\n')
 
 
-modelConf='C:/Users/LENOVO/Downloads/objectRealTime/cfg/yolov3-tiny.cfg'
-modelWeights='C:/Users/LENOVO/PycharmProjects/object-detaction/yolov3-tiny.weights'
+modelConf='C:/Users/LENOVO/Downloads/objectRealTime/cfg/yolov3-tiny.cfg' # add extension of configuration file for YOLO tiny model 
+modelWeights='C:/Users/LENOVO/PycharmProjects/object-detaction/yolov3-tiny.weights' # add extension of weights file for YOLO tiny model 
 
 def postprocess(frame, outs):
     frameHeight=frame.shape[0]
